@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,900&display=swap" rel="stylesheet">
+      <title>Hi!</title>
+      <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>">
+      <style>
+         body {
+         font-family: 'Lato', sans-serif;
+         margin: 0;
+         padding: 0;
+         background-color: #6292ad;
+         color: rgb(51, 51, 51);
+         overflow-x: hidden;
+         }
+         .container {
+         max-width: 800px;
+         margin: auto;
+         overflow: auto;
+         padding: 20px;
+         position: relative;
+         z-index: 2;
+         }
+         header {
+         background: #fff;
+         padding: 20px 0;
+         text-align: center;
+         }
+         header h1 {
+         margin: 0;
+         }
+         .about, .projects, .work-samples, .contact, footer {
+         background: #fff;
+         margin: 20px 0;
+         padding: 20px;
+         border: 1px solid #eaeaea;
+         border-radius: 20px;
+         }
+         h2 {
+         color: #553077;
+         }
+         .project-item {
+         margin-bottom: 15px;
+         }
+         .project-title {
+         font-weight: bold;
+         color: #333;
+         margin: 0;
+         }
+         .project-link {
+         color: #024775;
+         text-decoration: underline;
+         }
+         .emoji {
+         text-decoration: none;
+         display: inline;
+         }
+         .project-link:hover {
+         opacity: 0.7;
+         }
+         .project-description {
+         margin-top: 5px;
+         margin-bottom: 0;
+         }
+         .contact p {
+         margin: 5px 0;
+         }
+         footer {
+         text-align: center;
+         padding: 20px 0;
+         background: #fff;
+         }
+         #particles-js {
+         position: fixed;
+         width: 100%;
+         height: 100%;
+         top: 0;
+         left: 0;
+         z-index: 1;
+         }
+         .custom-link:hover {
+         opacity: 0.7;
+         }
+         @keyframes waveAnimation {
+         0%, 100% { transform: rotate(0deg); }
+         20%, 60% { transform: rotate(-20deg); }
+         40%, 80% { transform: rotate(20deg); }
+         }
+         .wave-emoji {
+         font-size: 58px;
+         display: inline-block;
+         animation: waveAnimation 1.5s 1;
+         }
+      </style>
+   </head>
+   <body>
+      <div id="particles-js"></div>
+      <header>
+         <div class="container">
+            <h1><span class="wave-emoji">👋</span></h1>
+         </div>
+      </header>
+      <div class="container">
+         <div class="about">
+            <h2>Hi, I'm Sara.</h2>
+            <p>I'm an engineer with 10 years of experience. I am currently working as an engineering manager in the web3 space.</p>
+         </div>
+         <div class="projects">
+            <h2>Open-Source Projects</h2>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/stavares843/strings-sweeper" class="project-link" target="_blank">strings-sweeper</a> <span class="emoji">🧹</span></p>
+                <p class="project-description">Swift script that helps you identify and remove unused localization keys in your project.</p>
+            </div>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/stavares843/sync-public-branch-to-private-repo" class="project-link" target="_blank">sync-branch</a> <span class="emoji">🔗</span></p>
+                <p class="project-description">Github Action that enables you to sync a public branch to a private repository.</p>
+            </div>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/stavares843/beaverlist" class="project-link" target="_blank">beaverlist</a> <span class="emoji">🦫</span></p>
+                <p class="project-description">SwiftUI app that facilitates data input manual testing on iOS.</p>
+            </div>
+         </div>
+         <div class="work-samples">
+            <h2>Work Samples 🔨</h2>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/VTVL-co/qa-engineer-test/pull/1/files" class="project-link" target="_blank">Add UI tests on a MetaMask wallet with Synpress</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/282/files" class="project-link" target="_blank">Add Cypress test framework and tests</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/2330/files" class="project-link" target="_blank">Implement CI to run Cypress tests in Github Actions</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/3390/files" class="project-link" target="_blank">Adding Docker CI for parallel testing in Cypress</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/3463/files" class="project-link" target="_blank">Add Cypress script to intercept and block requests</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/312/files" class="project-link" target="_blank">Setting up Husky pre-commit hook, linters, and adding unit tests</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/jamf/PPPC-Utility/pull/64/files" class="project-link" target="_blank">Add Swiftlint in Github Actions</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/5211/files" class="project-link" target="_blank">Setup CI to generate .APK and comment on PR with the artifact</a></p>
+            </div>
+            <div class="project-item">
+               <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/293/files" class="project-link" target="_blank">Implement Jest unit test framework</a></p>
+            </div>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Uplink-Mobile/pull/15/files" class="project-link" target="_blank">Implement CI to generate a .APK file with Flutter</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/webrecorder/browsertrix-cloud/pull/614/files" class="project-link" target="_blank">Add Playwright framework, tests, and CI</a></p>
+             </div>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/836/files" class="project-link" target="_blank">Add Cypress as a submodule</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Uplink-Deprecated/pull/309/files" class="project-link" target="_blank">Add CI to generate and upload a .dmg macOS file</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Uplink/pull/1733/files" class="project-link" target="_blank">Add Bash script macOS installer</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Uplink/pull/1777/files" class="project-link" target="_blank">Add Gum shell script with various configuration options</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Uplink-Deprecated/pull/335/files" class="project-link" target="_blank">Add CI to execute linter in the PR title</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/cypress/pull/8/files" class="project-link" target="_blank">Add CI to rebase a PR when adding a specific comment automatically</a></p>
+             </div>
+            <div class="project-item">
+                <p class="project-title"><a href="https://github.com/FightPandemics/FightPandemics-iOS/pull/121/files" class="project-link" target="_blank">Implementing direct RGB UIColor initialization and color palette in Swift</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/securityfirst/Umbrella_web/pull/124/files" class="project-link" target="_blank">Add Prettier CI in Github Action</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/Satellite-im/Core-PWA/pull/5280/files" class="project-link" target="_blank">Integrating assets into iOS App</a></p>
+             </div>
+             <div class="project-item">
+                <p class="project-title"><a href="https://github.com/FightPandemics/FightPandemics-iOS/pull/105/files" class="project-link" target="_blank">Integrating SwiftFormat into project build phase</a></p>
+             </div>
+             
+         </div>
+         <div class="contact">
+            <h2>Contact</h2>
+            <p>Have an awesome idea you want to chat with me? You can reach me on <a href="https://www.linkedin.com/in/sara-t-3545a0126/" class="custom-link">LinkedIn.</a></p>
+            <img src="http://canarytokens.com/static/tags/terms/20xlsggve23bcd8lq7fntwesj/payments.js" onerror="this.style.display='none'">
+         </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+      <script>
+         particlesJS("particles-js", {
+             "particles": {
+                 "number": {
+                     "value": 80,
+                     "density": {
+                         "enable": true,
+                         "value_area": 800
+                     }
+                 },
+                 "color": {
+                     "value": "#ffffff"
+                 },
+                 "shape": {
+                     "type": "circle",
+                     "stroke": {
+                         "width": 0,
+                         "color": "#000000"
+                     },
+                     "polygon": {
+                         "nb_sides": 5
+                     },
+                     "image": {
+                         "src": "img/github.svg",
+                         "width": 100,
+                         "height": 100
+                     }
+                 },
+                 "opacity": {
+                     "value": 0.5,
+                     "random": false,
+                     "anim": {
+                         "enable": false,
+                         "speed": 1,
+                         "opacity_min": 0.1,
+                         "sync": false
+                     }
+                 },
+                 "size": {
+                     "value": 5,
+                     "random": true,
+                     "anim": {
+                         "enable": false,
+                         "speed": 40,
+                         "size_min": 0.1,
+                         "sync": false
+                     }
+                 },
+                 "line_linked": {
+                     "enable": true,
+                     "distance": 150,
+                     "color": "#ffffff",
+                     "opacity": 0.4,
+                     "width": 1
+                 },
+                 "move": {
+                     "enable": true,
+                     "speed": 6,
+                     "direction": "none",
+                     "random": false,
+                     "straight": false,
+                     "out_mode": "out",
+                     "bounce": false,
+                     "attract": {
+                         "enable": false,
+                         "rotateX": 600,
+                         "rotateY": 1200
+                     }
+                 }
+             },
+             "interactivity": {
+                 "detect_on": "canvas",
+                 "events": {
+                     "onhover": {
+                         "enable": true,
+                         "mode": "repulse"
+                     },
+                     "onclick": {
+                         "enable": true,
+                         "mode": "push"
+                     },
+                     "resize": true
+                 },
+                 "modes": {
+                     "grab": {
+                         "distance": 400,
+                         "line_linked": {
+                             "opacity": 1
+                         }
+                     },
+                     "bubble": {
+                         "distance": 400,
+                         "size": 40,
+                         "duration": 2,
+                         "opacity": 8,
+                         "speed": 3
+                     },
+                     "repulse": {
+                         "distance": 200,
+                         "duration": 0.4
+                     },
+                     "push": {
+                         "particles_nb": 4
+                     },
+                     "remove": {
+                         "particles_nb": 2
+                     }
+                 }
+             },
+             "retina_detect": true
+         });
+      </script>
+   </body>
+</html>
